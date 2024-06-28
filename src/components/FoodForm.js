@@ -52,39 +52,6 @@ export default function FoodForm({
 
 	return (
 		<div>
-			{/* <form onSubmit={onSubmit} className="flex flex-col items-center">
-				{detailFood ? null : <h1>Buat Makanan Baru</h1>}
-				<input
-					value={formData?.name}
-					onChange={handleChange}
-					name="name"
-					className="block mt-2 text-black"
-					placeholder="Masukkan nama makanan"
-				/>
-				<label>URL Gambar</label>
-				<input
-					value={formData?.imageUrl}
-					onChange={handleChange}
-					name="imageUrl"
-					type="url"
-					className="block mt-2 text-black"
-					placeholder="Masukkan url gambar"
-				/>
-				<label>Deskripsi</label>
-				<input
-					value={formData?.description}
-					onChange={handleChange}
-					name="description"
-					className="block mt-2 text-black"
-					placeholder="Masukkan deskripsi"
-				/>
-				<button
-					className="px-4 py-1 mt-2 bg-blue-500 rounded-full"
-					type="submit"
-				>
-					{detailFood ? "Update Makanan" : "Buat Makanan"}
-				</button>
-			</form> */}
 			<form
 				onSubmit={onSubmit}
 				className="flex flex-col items-center justify-center gap-3"
@@ -95,10 +62,6 @@ export default function FoodForm({
 
 				<label className="self-start block text-white">Nama Makanan</label>
 				<input
-					// onChange={(event) =>
-					// 	setFormData((prev) => ({ ...prev, name: event.target.value }))
-					// }
-					// value={detailFood ? formData.name : ""}
 					value={formData.name}
 					onChange={handleChange}
 					name="name"
@@ -111,10 +74,6 @@ export default function FoodForm({
 					URL Gambar Makanan
 				</label>
 				<input
-					// onChange={(event) =>
-					// 	setFormData((prev) => ({ ...prev, imageUrl: event.target.value }))
-					// }
-					// value={detailFood ? formData.imageUrl : ""}
 					value={formData.imageUrl}
 					onChange={handleChange}
 					name="imageUrl"
@@ -126,7 +85,6 @@ export default function FoodForm({
 
 				<label className="self-start block text-white">Deskripsi Makanan</label>
 				<input
-					// value={detailFood ? formData.description : ""}
 					value={formData.description}
 					onChange={handleChange}
 					name="description"
@@ -138,7 +96,6 @@ export default function FoodForm({
 
 				<label className="self-start block text-white ">Resep masakan</label>
 				<input
-					// value={detailFood ? formData.ingredients : ""}
 					value={formData.ingredients}
 					onChange={handleChange}
 					name="ingredients"
